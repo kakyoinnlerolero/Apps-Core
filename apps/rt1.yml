@@ -13,13 +13,13 @@
     - name: 'Set Known Facts'
       set_fact:
         pgrole: 'rt1'
-        intport: '81'
+        intport: '80'
         extport: '8991'
         intport2: '5001'
         extport2: '5001'
         intport3: '51414'
         extport3: '51414'
-        image: 'linuxserver/rutorrent'
+        image: 'horjulf/rutorrent-autodl'
 
     # CORE (MANDATORY) ############################################################
     - name: 'Including cron job'
@@ -79,7 +79,7 @@
     - name: 'Install config.php fix'
       template:
         src: /opt/coreapps/apps/templates/rutorrent/rutorrent/settings/config.php
-        dest: /opt/appdata/rutorrent/rutorrent/settings/config.php
+        dest: /opt/appdata/rt1/rutorrent/settings/config.php
         force: yes
         owner: '1000'
         group: '1000'

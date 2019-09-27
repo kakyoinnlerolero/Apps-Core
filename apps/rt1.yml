@@ -15,9 +15,9 @@
         pgrole: 'rt1'
         intport: '80'
         extport: '8991'
-        intport2: '5001'
+        intport2: '5000'
         extport2: '5001'
-        intport3: '51414'
+        intport3: '51413'
         extport3: '51414'
         image: 'horjulf/rutorrent-autodl'
 
@@ -79,7 +79,7 @@
     - name: 'Install config.php fix'
       template:
         src: /opt/coreapps/apps/templates/rutorrent/rutorrent/settings/config.php
-        dest: /opt/appdata/rt1/rutorrent/settings/config.php
+        dest: /opt/appdata/{{pgrole}}/rutorrent/settings/config.php
         force: yes
         owner: '1000'
         group: '1000'

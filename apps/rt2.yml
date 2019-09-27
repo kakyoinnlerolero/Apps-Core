@@ -15,9 +15,9 @@
         pgrole: 'rt2'
         intport: '80'
         extport: '8992'
-        intport2: '5002'
+        intport2: '5000'
         extport2: '5002'
-        intport3: '51415'
+        intport3: '51413'
         extport3: '51415'
         image: 'horjulf/rutorrent-autodl'
 
